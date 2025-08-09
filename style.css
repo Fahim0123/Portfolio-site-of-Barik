@@ -594,83 +594,6 @@ body {
   }
 }
 
-/* Footer */
-#main-footer {
-  background-color: var(--primary-color);
-  color: #f1d96f;
-  padding: 3rem 2rem 2rem;
-  font-family: var(--font-primary);
-}
-
-.footer-content-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.footer-column {
-  flex: 1 1 280px;
-}
-
-.footer-heading {
-  font-family: var(--font-accent);
-  color: #f1d96f;
-  margin-bottom: 1rem;
-}
-
-.footer-address,
-.contact-info {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-.footer-links-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer-links-list li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-link {
-  color: #f1d96f;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: #d4af37;
-}
-
-.footer-bottom {
-  text-align: center;
-  color: #baa839;
-  font-size: 0.85rem;
-  margin-top: 2rem;
-}
-
-.footer-col.contact {
-  background: rgba(13, 27, 42, 0.8); /* semi-transparent dark */
-  padding: 1rem 1.5rem;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.footer-col.contact p {
-  color: #f1d96f; /* bright gold */
-  margin-bottom: 0.6rem;
-  font-weight: 600;
-}
-
-.footer-col.contact i {
-  margin-right: 8px;
-  color: #d4af37;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .product-categories-grid {
@@ -1221,23 +1144,15 @@ nav ul.nav-links li a.active::after {
   line-height: 1.6;
 }
 
-/* Client Categories Container */
-.client-categories {
-  display: flex;
-  gap: 3.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 /* Each Category Card */
 .client-category {
-  background: #fefefe; /* আরও হালকা */
+  background: var(--light-bg);
   border-radius: var(--radius);
-  box-shadow: 0 14px 36px rgba(13,27,42,0.3);
+  box-shadow: 0 14px 36px rgba(13,27,42,0.25); /* স্পষ্ট ও ডিপ শ্যাডো */
   padding: 3rem 2.5rem;
   flex: 1 1 360px;
   transition: box-shadow 0.35s ease, transform 0.3s ease, border-color 0.3s ease;
-  border: 2px solid rgba(204, 90, 34, 0.6); /* আরেকটু গাঢ় */
+  border: 2px solid rgba(204, 90, 34, 0.45); /* একটু গাঢ় বর্ডার */
 }
 
 .client-category:hover {
@@ -1272,7 +1187,7 @@ nav ul.nav-links li a.active::after {
 .client-card {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 10px 28px rgba(13,27,42,0.22);
+  box-shadow: 0 10px 26px rgba(13,27,42,0.18); /* একটু ডিপার শ্যাডো */
   padding: 1.2rem 1.5rem;
   text-align: center;
   font-weight: 600;
@@ -1280,92 +1195,18 @@ nav ul.nav-links li a.active::after {
   color: var(--primary-color);
   cursor: default;
   transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  border: 1.5px solid rgba(204, 90, 34, 0.3);
+  border: 1.5px solid transparent;
 }
 
 .client-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 44px rgba(13,27,42,0.3);
+  box-shadow: 0 16px 40px rgba(13,27,42,0.28);
   color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
 
-/* Footer */
-#main-footer {
-  background-color: var(--primary-color);
-  color: #f1d96f;
-  padding: 3rem 2rem 2rem;
-  font-family: var(--font-primary);
-}
 
-.footer-content-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-}
 
-.footer-column {
-  flex: 1 1 280px;
-}
-
-.footer-heading {
-  font-family: var(--font-accent);
-  color: #f1d96f;
-  margin-bottom: 1rem;
-}
-
-.footer-address,
-.contact-info {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-.footer-links-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer-links-list li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-link {
-  color: #f1d96f;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: #d4af37;
-}
-
-.footer-bottom {
-  text-align: center;
-  color: #baa839;
-  font-size: 0.85rem;
-  margin-top: 2rem;
-}
-
-.footer-col.contact {
-  background: rgba(13, 27, 42, 0.8); /* semi-transparent dark */
-  padding: 1rem 1.5rem;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.footer-col.contact p {
-  color: #f1d96f; /* bright gold */
-  margin-bottom: 0.6rem;
-  font-weight: 600;
-}
-
-.footer-col.contact i {
-  margin-right: 8px;
-  color: #d4af37;
-}
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
@@ -1635,7 +1476,6 @@ textarea {
   box-shadow: 0 6px 20px rgba(186, 168, 57, 0.8);
 }
 
-
 /* Contact Info */
 .contact-info h2 {
   font-family: var(--font-accent);
@@ -1650,9 +1490,9 @@ textarea {
   align-items: flex-start;
   gap: 1.4rem;
   margin-bottom: 1.8rem;
-  background: #fefefe; /* হালকা হোয়াইট ব্যাকগ্রাউন্ড */
-  border: 1.8px solid rgba(212, 175, 55, 0.3); /* গোল্ডেন বর্ডার */
-  box-shadow: 0 12px 30px rgba(13, 27, 42, 0.2); /* গভীর শ্যাডো */
+  background: #fefefe;
+  border: 1.8px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 12px 30px rgba(13, 27, 42, 0.2);
   padding: 1rem 1.2rem;
   border-radius: var(--radius);
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
@@ -1713,6 +1553,102 @@ textarea {
 .bank-info strong {
   font-weight: 700;
 }
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .contact-form, .contact-info {
+    flex: 1 1 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-form h2,
+  .contact-info h2 {
+    font-size: 1.75rem;
+  }
+
+  .info-card {
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .info-card i {
+    font-size: 2rem;
+    min-width: 36px;
+  }
+
+  .info-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .info-card p {
+    font-size: 0.95rem;
+  }
+
+  .bank-info h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-form, .contact-info {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-form h2,
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+  }
+
+  .info-card {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .info-card i {
+    font-size: 1.8rem;
+    min-width: auto;
+    margin-top: 0;
+  }
+
+  .info-card h3 {
+    font-size: 1rem;
+  }
+
+  .info-card p {
+    font-size: 0.9rem;
+  }
+
+  .bank-info h3 {
+    font-size: 1.2rem;
+  }
+}
+
 
 /* Map Section */
 .map-section {
@@ -1811,6 +1747,35 @@ footer {
 .footer-col ul li a:hover {
   color: #d4af37;
   transform: translateX(5px);
+}
+
+footer .footer-grid ul li a {
+  color: #fff; /* সাদা টেক্সট */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* হালকা bright shadow */
+}
+
+footer .footer-grid ul li a:hover {
+  color: #f1d96f; /* হোভার করলে গোল্ডেন কালার */
+  text-shadow: 0 0 10px rgba(241, 217, 111, 0.9); /* হোভার হলে আরো bright shadow */
+}
+
+footer .copyright {
+  background-color: #0d1b2a; /* তোমার পছন্দের ব্যাকগ্রাউন্ড */
+  color: #f1d96f;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  user-select: none;
+
+  margin-top: 1.5rem; /* উপরের বক্স থেকে স্পেস তৈরি করবে */
+  border-top: 1px solid rgba(241, 217, 111, 0.3); /* হালকা টপ বর্ডার (ঐচ্ছিক) */
 }
 
 /* Responsive */
