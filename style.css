@@ -1473,6 +1473,7 @@ nav ul.nav-links li a.active::after {
   border-left: 4px solid var(--secondary-color);
   padding-left: 1rem;
   letter-spacing: 0.7px;
+  word-break: break-word; /* লম্বা শব্দ ভাঙার জন্য */
 }
 
 /* Client Grid */
@@ -1486,7 +1487,7 @@ nav ul.nav-links li a.active::after {
 .client-card {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 10px 26px rgba(13,27,42,0.18); /* একটু ডিপার শ্যাডো */
+  box-shadow: 0 10px 26px rgba(13,27,42,0.18);
   padding: 1.2rem 1.5rem;
   text-align: center;
   font-weight: 600;
@@ -1503,6 +1504,38 @@ nav ul.nav-links li a.active::after {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .client-category h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    gap: 0.6rem;
+    padding-left: 0.7rem;
+    border-left-width: 3px;
+  }
+
+  .client-card {
+    font-size: 0.9rem;
+    padding: 1rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    gap: 0.4rem;
+    padding-left: 0.5rem;
+    border-left-width: 2px;
+  }
+
+  .client-card {
+    font-size: 0.85rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
 
 
 /* Footer */
